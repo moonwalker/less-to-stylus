@@ -2,15 +2,15 @@
 
 *Experimental* `.less` to `.stylus` conversion.
 
-Based on shttps://github.com/vio/semantic-ui-stylu://gist.github.com/MoOx/3490671
+Based on https://github.com/vio/semantic-ui-stylu://gist.github.com/MoOx/3490671
 
 ## Usage
 
 ### CLI
 ```shell
-> npm install -g @moonwalker/less-to-stylus
+$ npm install -g @moonwalker/less-to-stylus
 
-> less-to-stylus -h
+$ less-to-stylus -h
 cli.js <file> > output.styl
 
 Convert .less to .stylus
@@ -26,7 +26,7 @@ Options:
 ### Javascript
 
 ```shell
-> npm install -D @moonwalker/less-to-stylus
+$ npm install -D @moonwalker/less-to-stylus
 ```
 
 ```js
