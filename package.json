@@ -1,0 +1,32 @@
+{
+  "name": "@moonwalker/less-to-stylus",
+  "version": "0.1.0",
+  "description": "Experimental Less to Stylus convertion",
+  "main": "src/index.js",
+  "repository": "git@github.com:moonwalker/less-to-stylus.git",
+  "bugs": "https://github.com/moonwalker/less-to-stylus/issues",
+  "homepage": "https://github.com/moonwalker/less-to-stylus/#readme",
+  "bin": {
+    "less2stylus": "bin/cli.js"
+  },
+  "scripts": {
+    "lint": "eslint bin lib",
+    "prepublishOnly": "npm run lint && npm run test",
+    "test": "jest lib/*.spec.js"
+  },
+  "keywords": [
+    "less",
+    "stylus"
+  ],
+  "author": "Vio <vio@moonwalker.tech",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "jest": "^22.4.2"
+  },
+  "dependencies": {
+    "yargs": "^11.0.0"
+  }
+}
