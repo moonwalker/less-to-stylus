@@ -4,7 +4,7 @@ const fs = require('fs');
 const { convert } = require('../lib');
 
 const { argv } = require('yargs')
-  .usage('$0 <file> > output.styl', 'Convert .less to .stylus', (yargs) => {
+  .usage('$0 <file>', 'Convert .less to .stylus', (yargs) => {
     yargs.positional('file', {
       description: 'Less file',
       type: 'string',

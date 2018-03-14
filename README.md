@@ -1,6 +1,6 @@
 # Less-to-Stylus
 
-*Experimental* `.less` to `.stylus` conversion.
+*Basic* `.less` to `.stylus` conversion.
 
 Based on https://github.com/vio/semantic-ui-stylu://gist.github.com/MoOx/3490671
 
@@ -11,7 +11,7 @@ Based on https://github.com/vio/semantic-ui-stylu://gist.github.com/MoOx/3490671
 $ npm install -g @moonwalker/less-to-stylus
 
 $ less-to-stylus -h
-cli.js <file> > output.styl
+less-to-stylus <file> > output.styl
 
 Convert .less to .stylus
 
@@ -39,3 +39,10 @@ fs.readFile('./source.less', 'utf8', (err, source) => {
   console.log(output);
 });
 ```
+
+## Use Stylus plugin
+
+Some Less functionality does not have a Stylus correspondent. The plugin can help bridge some of the
+differences:
+
+- `@import (optional)`

@@ -1,8 +1,9 @@
 {
   "name": "@moonwalker/less-to-stylus",
   "version": "0.1.0",
-  "description": "Experimental Less to Stylus convertion",
-  "main": "src/index.js",
+  "private": false,
+  "description": "Basic Less to Stylus convertion",
+  "main": "lib/index.js",
   "repository": "git@github.com:moonwalker/less-to-stylus.git",
   "bugs": "https://github.com/moonwalker/less-to-stylus/issues",
   "homepage": "https://github.com/moonwalker/less-to-stylus/#readme",
@@ -27,6 +28,7 @@
     "jest": "^22.4.2"
   },
   "dependencies": {
+    "stylus": "^0.54.5",
     "yargs": "^11.0.0"
   }
 }
