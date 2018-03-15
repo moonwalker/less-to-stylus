@@ -14,6 +14,10 @@ const { argv } = require('yargs')
     type: 'string',
     description: 'Prefix variable names with a string,\n default `\'\'` (`$` is added automatically)',
   })
+  .option('conditional-assignment', {
+    type: 'boolean',
+    description: 'Replace all assignments with conditional assignments',
+  })
   .help();
 
 const filepath = require.resolve(argv.file, {
@@ -28,6 +32,7 @@ fs.readFile(filepath, 'utf8', (err, content) => {
   }
 
   return console.log(convert(content, { // eslint-disable-line no-console
-    variablePrefix: argv.prefix,
+    variablePrefix: argv['variable-prefix'],
+    conditionalAssignment: argv['conditional-assignment'],
   }));
 });
