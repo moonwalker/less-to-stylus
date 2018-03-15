@@ -10,7 +10,7 @@ const { argv } = require('yargs')
       type: 'string',
     });
   })
-  .option('variable-prefix', {
+  .option('variable-name-prefix', {
     type: 'string',
     description: 'Prefix variable names with a string,\n default `\'\'` (`$` is added automatically)',
   })
@@ -32,7 +32,7 @@ fs.readFile(filepath, 'utf8', (err, content) => {
   }
 
   return console.log(convert(content, { // eslint-disable-line no-console
-    variablePrefix: argv['variable-prefix'],
+    variableNamePrefix: argv['variable-name-prefix'],
     conditionalAssignment: argv['conditional-assignment'],
   }));
 });

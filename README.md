@@ -20,12 +20,11 @@ Positionals:
 
 Options:
   --version                 Show version number                        [boolean]
-  --variable-prefix         Prefix variable names with a string,
+  --variable-name-prefix    Prefix variable names with a string,
                             default `''` (`$` is added automatically)   [string]
   --conditional-assignment  Replace all assignments with conditional assignments
                                                                        [boolean]
   --help                    Show help                                  [boolean]
-```
 
 ### Javascript
 
