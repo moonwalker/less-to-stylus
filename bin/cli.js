@@ -10,6 +10,10 @@ const { argv } = require('yargs')
       type: 'string',
     });
   })
+  .option('variable-prefix', {
+    type: 'string',
+    description: 'Prefix variable names with a string,\n default `\'\'` (`$` is added automatically)',
+  })
   .help();
 
 const filepath = require.resolve(argv.file, {
@@ -23,5 +27,7 @@ fs.readFile(filepath, 'utf8', (err, content) => {
     return console.error(err.message); // eslint-disable-line no-console
   }
 
-  return console.log(convert(content)); // eslint-disable-line no-console
+  return console.log(convert(content, { // eslint-disable-line no-console
+    variablePrefix: argv.prefix,
+  }));
 });

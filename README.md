@@ -19,8 +19,10 @@ Positionals:
   file  Less file                                                       [string]
 
 Options:
-  --version  Show version number                                       [boolean]
-  --help     Show help                                                 [boolean]
+  --version          Show version number                               [boolean]
+  --variable-prefix  Prefix variable names with a string,
+                     default `''` (`$` is added automatically)          [string]
+  --help             Show help                                         [boolean]
 ```
 
 ### Javascript
