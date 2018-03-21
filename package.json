@@ -1,6 +1,6 @@
 {
   "name": "@moonwalker/less-to-stylus",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "description": "Basic Less to Stylus convertion",
   "main": "lib/index.js",
